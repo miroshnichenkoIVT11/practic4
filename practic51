@@ -1,10 +1,10 @@
-filename = input("Введите имя файла: ")
+filename = input("enter file name: ")
 if filename == "":
     exit()
 if filename.endswith((".txt", ".doc", ".docx", ".odt", ".rtf")):
     if any(i in filename for i in "<>/\|?*"):
-        print("Недопустимое имя файла")
+        print("error file name")
     else:
-        print("Допустимое имя файла")
+        print("good file name")
 else:
-    print("Недопустимое имя файла")
+    print("error file name")
